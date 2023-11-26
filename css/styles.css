@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02e;
+    letter-spacing: 0.02em;
     color: #434455;
     background-color: #ffffff;
 }
@@ -383,9 +383,10 @@ img {
 .footer-all {
     display: flex;
     align-items: baseline
+    justify-content: flex-start;
 }
 
-.footer-content {
+.container.footer-content {
     margin-right: 120px;
 }
 
@@ -418,4 +419,9 @@ img {
     display: flex;
     justify-content: flex-start;
     gap: 16px;
+}
+
+.social-link.footer-icon:hover,
+.social-link.footer-icon:focus {
+    background-color: #31d0aa;
 }
