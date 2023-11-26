@@ -382,11 +382,11 @@ img {
 
 .footer-all {
     display: flex;
-    align-items: baseline
+    align-items: baseline;
     justify-content: flex-start;
 }
 
-.container.footer-content {
+.footer-content {
     margin-right: 120px;
 }
 
