@@ -280,6 +280,9 @@ img {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -309,6 +312,37 @@ img {
     width: calc((100% - 48px) / 3);
 }
 
+.portf-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    font-weight: 400;
+    color: #F4F4FD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    overflow: auto;
+    transform: translateY(100%);
+    background-color: #4D5AE5;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portf-card:hover .overlay {
+    transform: translateY(0%);
+}
+
+.portf-card:hover {
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .portf-card-sign {
     padding: 32px 16px;
     border: 1px solid #e7e9fc; 
@@ -334,6 +368,7 @@ img {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
 }
 
 .logo-part-white {
@@ -349,4 +384,20 @@ img {
     font-weight: 400;
     color: #F4F4FD;
     width: 264px;
+}
+
+.footer-media {
+    margin-left: 0px;
+}
+
+.footer-media-title {
+    font-weight: 500;
+    color: #FFF;
+    margin-bottom: 16px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
 }
